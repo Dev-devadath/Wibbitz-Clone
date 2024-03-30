@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section id="product" style="background-color: {{product.product_bg_color}};">
+  <section class="wrapper">
+    <a href="#" class="logo-badge">
+      <img src="{{product.logo.url}}" alt="" />
+      {{product.name}}
+    </a>
+    <h1>{{product.title}}</h1>
+    <p>{{product.description}}</p>
+    <a href="#" class="button">Get in Touch</a>
+    <img src="{{product.hero_image.url}}" alt="Hero Image" class="hero" />
+  </section>
+</section>
+<section id="inner-page-brands">
+  <section class="wrapper">
+    <h6>Leading brands trust Wibbitz for video</h6>
+    <ul>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="{% static 'images/logo-birchbox.svg' %}"
+            alt="logo-birchbox"
+        /></a>
+      </li>
+    </ul>
+  </section>
+</section>
+{% endblock %}
